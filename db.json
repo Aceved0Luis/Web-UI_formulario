@@ -13,6 +13,20 @@
       "priority": 2,
       "description": "necesito ingresar a git hub",
       "resolve": false
+    },
+    {
+      "id": "d7ba",
+      "title": "una mas vamos",
+      "description": "entregue mal",
+      "priority": "3",
+      "resolve": true
+    },
+    {
+      "id": "5217",
+      "title": "muestra",
+      "description": "a",
+      "priority": 1,
+      "resolve": false
     }
   ]
 }
