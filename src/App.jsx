@@ -25,20 +25,21 @@ function App() {
       const priority = selectPriority;
       const resuelto = checkresul;
       if (title.length > 5 && title.length < 18){
-        fetch('http://localhost:3000/ticket', {
+        api.post(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({title:title, description:descripcion, priority: priority, resolve:resuelto})
+        body: ({title:title, description:descripcion, priority: priority, resolve:resuelto})
         })
-          .then(res => {
-            return res.json()
-          })
           .then(data => {
             const nuevoArregloTickets = [...db, data];
             setDb(nuevoArregloTickets);
           })
+          setInputTitle("");
+          setInputDescription("");
+          setSelectPriority(1);
+          setCheckResul(false);
       }
     }
 
