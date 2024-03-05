@@ -1,0 +1,18 @@
+{
+  "ticket": [
+    {
+      "id": "1",
+      "title": "ejemplo",
+      "priority": 1,
+      "description": "test",
+      "resolve": true
+    },
+    {
+      "id": "2",
+      "title": "admitir git hub",
+      "priority": 2,
+      "description": "necesito ingresar a git hub",
+      "resolve": false
+    }
+  ]
+}
